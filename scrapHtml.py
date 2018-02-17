@@ -1,4 +1,6 @@
 import scrapy
+import os
+os.makedirs('./contentHtml', exist_ok=True)
 class SpiderClass(scrapy.Spider):
     name = "web"
     def __init__(self):

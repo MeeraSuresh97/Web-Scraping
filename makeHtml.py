@@ -1,3 +1,4 @@
+import os
 from faker import Faker
 from random import choice, randint
 fake = Faker()
@@ -44,6 +45,7 @@ class Pages():
 
 
 for i in range(1,101):
+    os.makedirs('./plainHtml', exist_ok=True)
     f = open('./plainHtml/file'+str(i)+'.html','w')
     f.write("""<html>
     <head></head>
